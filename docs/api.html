@@ -441,7 +441,7 @@ var Model = mongoose.model('Model', schema);
 
 var m = new Model(..);
 m.save(function(err) {
-  console.log('this fires after the `post` hook');
+  console.log('this fires after the post save hook');
 });
 
 m.find(function(err, docs) {
